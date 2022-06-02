@@ -2,21 +2,18 @@
   <h1 class="ft-3">New User Account</h1>
   <%= form_with :model => @user do |form| %>  
     <div class="mb-3">
-    <p>
-    <%= form.label "username", :class => "form-label" %>
-    <%= form.text_field "username", :class => "form-control" %>
-  </p>
-  <p>
-    <%= form.label "email", :class => "form-label"  %>
-    <%= form.text_field "email", :class => "form-control" %>
-  </p>
-  <p>
-    <%= form.label "password", :class => "form-label"  %>
-    <%= form.text_field "password", :class => "form-control" %>
-  </p>
-  <p>
-    <%= form.submit "Sign up", :class => "btn btn-primary"  %>
-  </p>
+
+      <p>
+        <%= form.label "email", :class => "form-label"  %>
+        <%= form.text_field "email", :class => "form-control" %>
+      </p>
+      <p>
+        <%= form.label "password", :class => "form-label"  %>
+        <%= form.text_field "password", :class => "form-control" %>
+      </p>
+      <p>
+        <%= form.submit "Sign up", :class => "btn btn-primary"  %>
+      </p>
   <% end %>
 
   
