@@ -1,11 +1,14 @@
-<h1><%= @place["name"] %></h1>
 
-<h2>My Posts</h2>
+
+<div class="container mt-1 p-1">
+  <h1 class="display-4"> <%= @place["name"] %></h1>
+  <h1 class=".fs-3 text">My Posts</h1>
 <% for post in @posts %>
-  <h3><%= post["title"] %></h3>
+  <h3 class=".fs-5 text fw-light"> <%= post["title"] %></h3>
   <h4><%= post["posted_on"] %></h4>
   <p><%= post["description"] %></p>
 <% end %>
+</div>
 
 <p>
   <a href="/posts/new?place_id=<%= @place["id"] %>">New Post</a>
