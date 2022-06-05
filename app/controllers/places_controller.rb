@@ -20,4 +20,5 @@ class PlacesController < ApplicationController
     redirect_to "/places"
   end
 
+
 end
